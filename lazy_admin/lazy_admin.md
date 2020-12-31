@@ -17,7 +17,7 @@ Let's try fuzzing even deeper, we can do this with the command ```ffuf -w /usr/s
 
 ![fuzzing2](https://github.com/nicolai-h/tryhackme/blob/main/lazy_admin/images/fuzzing2.png)
 
-/as seems interesting, so lets check it out, oh an admin panel. We could try to brute-force it, but let's continue searching to see if we can find anything else that might be interesting.
+```/as``` seems interesting, so lets check it out, oh an admin panel. We could try to brute-force it, but let's continue searching to see if we can find anything else that might be interesting.
 
 <insert image>
 
