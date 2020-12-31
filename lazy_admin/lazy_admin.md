@@ -21,7 +21,7 @@ Let's try fuzzing even deeper, we can do this with the command ```ffuf -w /usr/s
 
 ![login](https://github.com/nicolai-h/tryhackme/blob/main/lazy_admin/images/login.png)
 
-We can find an backup of an mysql database at ```<ip>/content/inc/mysql_backup```, lets try downloading it and opening it.
+We can find an backup of an mysql database at ```<ip>/content/inc/mysql_backup```, lets try downloading it to see what it contains.
 
 ![sql](https://github.com/nicolai-h/tryhackme/blob/main/lazy_admin/images/sql.png)
 
