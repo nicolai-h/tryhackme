@@ -32,7 +32,7 @@ We now have the username and password and can login into the admin panel. We are
 
 Now that we have the username and password we can log in via SSH, this can be done with the command ```ssh -i <rsa_key> <name>@<ip>```. After  logging in via SSH we will directly find the user flag.
 
-![ssh](https://github.com/nicolai-h/tryhackme/blob/main/brute_it/images/ssh.png)
+![ssh](https://github.com/nicolai-h/tryhackme/blob/main/brute_it/images/ssh1.png)
 
 ## Privilege Escalation
 Now that we have gotten into the computer it's time for privilege escalation, so let's do some enumeration.
