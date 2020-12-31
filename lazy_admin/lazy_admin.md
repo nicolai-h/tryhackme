@@ -51,7 +51,7 @@ That worked, we now have gotten into the computer.
 ![user](https://github.com/nicolai-h/tryhackme/blob/main/lazy_admin/images/user.png)
 
 ## Privilege Escalation
-Now that we have gotten into the computer it's time for privilege escalation, so let's do some enumeration. sudo -l shows us that we can use ```/user/bin/perl /home/itguy/backup.pl``` as root.
+Now that we have gotten into the computer it's time for privilege escalation, so let's do some enumeration. ```sudo -l``` shows us that we can use ```/user/bin/perl /home/itguy/backup.pl``` as root.
 
 ![priv_esc](https://github.com/nicolai-h/tryhackme/blob/main/lazy_admin/images/priv_esc.png)
 
