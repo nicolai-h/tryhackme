@@ -1,7 +1,7 @@
 # Lazy Admin
 
 ## Reconnaissance
-Let's start the enumeration with scanning the ports, which we can do with nmap. This can be done with the command nmap -A -T4 <ip>.
+Let's start the enumeration with scanning the ports, which we can do with nmap. This can be done with the command ```nmap -A -T4 <ip>```.
 
 ![nmap](https://github.com/nicolai-h/tryhackme/blob/main/lazy_admin/images/nmap.png)
 
